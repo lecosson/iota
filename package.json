@@ -1,0 +1,46 @@
+{
+  "name": "@lecosson/iota",
+  "version": "1.0.5",
+  "description": "golang-like iota implementation",
+  "source": "./src/iota.ts",
+  "//source": "your source code",
+  "exports": {
+    "//require": "used for require() in Node 12+",
+    "//default": "where to generate the modern bundle (see below)",
+    "require": "./dist/iota.js",
+    "default": "./dist/iota.modern.js",
+    "types": "./dist/iota.d.ts"
+  },
+  "types": "./dist/iota.d.ts",
+  "//main": "where to generate the CommonJS bundle",
+  "//module": "where to generate the ESM bundle",
+  "//unpkg": "where to generate the UMD bundle (also aliased as 'umd:main')",
+  "main": "./dist/iota.js",
+  "module": "./dist/iota.module.js",
+  "unpkg": "./dist/iota.umd.js",
+  "scripts": {
+    "build": "microbundle",
+    "//build": "compiles 'source' to 'main'/'module'/'unpkg'",
+    "dev": "microbundle watch",
+    "//dev": "re-build when source files change"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/lecosson/iota.git"
+  },
+  "keywords": [
+    "iota"
+  ],
+  "author": "lecosson@gmail.com",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/lecosson/iota/issues"
+  },
+  "homepage": "https://github.com/lecosson/iota#readme",
+  "devDependencies": {
+    "gts": "^5.3.1",
+    "@types/node": "20.12.7",
+    "microbundle": "^0.15.1",
+    "typescript": "^5.4.3"
+  }
+}
